@@ -16,6 +16,7 @@ entity Categories : cuid, managed {
 entity Products : cuid, managed {
     name        : String(200);
     description : String(1000);
-
     category    : Association to Categories;
+
+    embedding   : Vector;
 }

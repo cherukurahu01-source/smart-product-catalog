@@ -1,5 +1,8 @@
 {
   "cdsc": {
     "draftMessages": true
+  },
+  "requires": {
+    "db": "hana"
   }
 }
