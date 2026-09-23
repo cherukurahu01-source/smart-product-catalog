@@ -18,5 +18,7 @@ entity Products : cuid, managed {
     description : String(1000);
     category    : Association to Categories;
 
-    embedding   : Vector;
+    embedding   : Vector = vector_embedding(
+        'Product: ' || name || ', Description: ' || description, 'DOCUMENT', 'SAP_GXY.20250407'
+    ) stored;
 }
