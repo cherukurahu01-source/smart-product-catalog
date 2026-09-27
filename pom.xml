@@ -17,8 +17,8 @@
 
 		<!-- DEPENDENCIES VERSION -->
 		<jdk.version>21</jdk.version>
-		<cds.services.version>4.1.1</cds.services.version>
-		<spring.boot.version>3.5.3</spring.boot.version>
+		<cds.services.version>5.1.1</cds.services.version>
+		<spring.boot.version>4.1.0</spring.boot.version>
 
 		<cds.install-node.downloadUrl>https://nodejs.org/dist/</cds.install-node.downloadUrl>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -38,6 +38,22 @@
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
+
+			<!-- Source: https://mvnrepository.com/artifact/com.sap.cds/cds-integration-ai -->
+<dependency>
+    <groupId>com.sap.cds</groupId>
+    <artifactId>cds-integration-ai</artifactId>
+    <version>5.1.1</version>
+    <scope>compile</scope>
+</dependency>
+
+<!-- Source: https://mvnrepository.com/artifact/com.sap.cds/cds-feature-recommendations -->
+<dependency>
+    <groupId>com.sap.cds</groupId>
+    <artifactId>cds-feature-recommendations</artifactId>
+    <version>0.0.2-alpha</version>
+    <scope>compile</scope>
+</dependency>
 
 			<!-- SPRING BOOT -->
 			<dependency>
